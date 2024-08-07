@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的博客</h1>
+        <nav>
+            <ul>
+                <li><a href="#posts">文章</a></li>
+                <li><a href="#about">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="posts">
+            <article>
+                <h2>文章标题1</h2>
+                <p>文章内容1...</p>
+            </article>
+            <article>
+                <h2>文章标题2</h2>
+                <p>文章内容2...</p>
+            </article>
+            <!-- 更多文章 -->
+        </section>
+        <section id="about">
+            <h2>关于我</h2>
+            <p>这里是关于我的信息...</p>
+        </section>
+    </main>
+    <footer>
+        <p>版权所有 &copy; 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
