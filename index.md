@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://zeroovector.github.io/images/fqt.jpg" class="floatpic" width="360" height="360">
+<img src="https://zeroovector.github.io/images/fqt.png" class="floatpic" width="360" height="360">
 
 
 页主樊起彤，北京理工大学物理学院本科生，应用物理学专业。
