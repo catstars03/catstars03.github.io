@@ -19,5 +19,12 @@ const blogs = [
     category: "物理",
     date: "2023年12月",
     file: "blog3.md"
+  },
+  {
+    title: "场论的对称性破缺",
+    subtitle: "",
+    category: "物理",
+    date: "2025年8月",
+    file: "Habits.pdf"
   }
 ];
