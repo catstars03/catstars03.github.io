@@ -18,188 +18,10 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
+
+
     <!-- Custom styles -->
     <link href="css/resume.css" rel="stylesheet">
-    
-    <!-- 内联样式 -->
-    <style>
-        /* css/note-detail.css */
-        .note-card {
-            background: #fff;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-            border: 1px solid rgba(0, 0, 0, 0.125);
-        }
-
-        .note-header {
-            padding: 1.5rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-            cursor: pointer;
-            position: relative;
-        }
-
-        .note-title {
-            font-family: 'Saira Extra Condensed', serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: #343a40;
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .note-subtitle {
-            font-size: 1rem;
-            color: #6c757d;
-            margin-bottom: 0.5rem;
-            font-style: italic;
-        }
-
-        .note-meta {
-            font-size: 0.9rem;
-            color: #6c757d;
-        }
-
-        .toggle-icon {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            font-size: 1.2rem;
-            color: #6c757d;
-        }
-
-        .note-content {
-            padding: 1.5rem;
-            color: #495057;
-            line-height: 1.6;
-        }
-
-        .note-outline {
-            display: none;
-            padding: 0 1.5rem 1.5rem 1.5rem;
-        }
-
-        .outline-item {
-            padding: 1rem 0;
-            border-bottom: 1px dashed #e9ecef;
-        }
-
-        .outline-item:last-child {
-            border-bottom: none;
-        }
-
-        .outline-link {
-            color: #3c74ee;
-            text-decoration: none;
-            font-weight: 600;
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .outline-link:hover {
-            text-decoration: underline;
-            color: #1045b8;
-        }
-
-        .outline-comment {
-            font-size: 0.9rem;
-            color: #6c757d;
-            font-style: italic;
-        }
-
-        .download-btn {
-            display: inline-block;
-            padding: 0.375rem 0.75rem;
-            font-size: 0.875rem;
-            border-radius: 0.25rem;
-            background-color: #3c74ee;
-            color: white;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .download-btn:hover {
-            background-color: #1045b8;
-            color: white;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #3c74ee;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .back-link i {
-            margin-right: 0.5rem;
-        }
-
-        .filter-tags {
-            margin-bottom: 2rem;
-        }
-
-        .tag {
-            display: inline-block;
-            padding: 0.375rem 0.75rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            background-color: #e9ecef;
-            color: #495057;
-            border-radius: 1rem;
-            cursor: pointer;
-        }
-
-        .tag:hover {
-            background-color: #3c74ee;
-            color: white;
-        }
-
-        .tag.active {
-            background-color: #3c74ee;
-            color: white;
-        }
-
-        .tag-count {
-            background-color: rgba(255, 255, 255, 0.3);
-            padding: 0 0.5rem;
-            border-radius: 1rem;
-            margin-left: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .note-title {
-                font-size: 1.5rem;
-            }
-            
-            .note-header {
-                padding: 1rem;
-            }
-            
-            .note-content, .note-outline {
-                padding: 1rem;
-            }
-        }
-        
-        /* 隐藏下载按钮的样式 */
-        .download-btn, .btn-download, [onclick*="download"] {
-            display: none !important;
-        }
-        
-        /* 章节标题加粗 */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: bold !important;
-        }
-        
-        .mb-0, .mb-5, .subheading {
-            font-weight: bold !important;
-        }
-    </style>
 </head>
 
 <body id="page-top">
@@ -262,42 +84,56 @@
                 
                 <div class="container-fluid">
                     <div class="notes-container" id="notesContainer">
-                        <!-- 示例卡片，用于测试显示效果 -->
-                        <div class="note-card">
-                            <div class="note-header">
-                                <h3 class="note-title">示例笔记标题</h3>
-                                <div class="note-subtitle">示例笔记副标题</div>
-                                <div class="note-meta">2023-01-01</div>
-                                <div class="toggle-icon">▼</div>
-                            </div>
-                            <div class="note-content">
-                                <p>这是示例笔记的内容部分。在GitHub Pages上应该能看到带有圆角和阴影的卡片效果。</p>
-                            </div>
-                        </div>
                         
-                        <div class="note-card">
-                            <div class="note-header">
-                                <h3 class="note-title">第二个示例笔记</h3>
-                                <div class="note-subtitle">另一个副标题</div>
-                                <div class="note-meta">2023-01-02</div>
-                                <div class="toggle-icon">▼</div>
-                            </div>
-                            <div class="note-content">
-                                <p>这是第二个示例笔记的内容部分，用于验证卡片样式是否正常显示。</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/resume.min.js"></script>
-    <script src="js/notes.js"></script>
+    <!-- Combined Data -->
+    <script src="js/combinedData.js"></script>
     <script src="js/notetag.js"></script>
+    
+
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="langZh" class="btn btn-sm btn-outline-light">中文</button>
+        <button id="langEn" class="btn btn-sm btn-outline-light ml-2">English</button>
+    </div>
+
+    <!-- Language Switcher Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = getCurrentLanguage();
+            const langZhBtn = document.getElementById('langZh');
+            const langEnBtn = document.getElementById('langEn');
+            
+            // 设置当前语言按钮样式
+            if (currentLang === 'zh') {
+                langZhBtn.classList.add('active');
+                langEnBtn.classList.remove('active');
+            } else {
+                langEnBtn.classList.add('active');
+                langZhBtn.classList.remove('active');
+            }
+            
+            // 添加语言切换事件
+            langZhBtn.addEventListener('click', function() {
+                setLanguage('zh');
+            });
+            
+            langEnBtn.addEventListener('click', function() {
+                setLanguage('en');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,237 +1,167 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Catstars 博客详情">
+    <meta name="author" content="Catstars">
+    <title>博客详情 - Catstars</title>
 
-  <title>Blog - Catstars</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-  
-  <!-- Download page styles -->
-  <style>
-    .download-content {
-      line-height: 1.8;
-    }
-    
-    .download-content h1,
-    .download-content h2,
-    .download-content h3,
-    .download-content h4,
-    .download-content h5,
-    .download-content h6 {
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-      color: #000000;
-    }
-    
-    .download-content h1 {
-      font-size: 1.75rem; /* 原来是2rem，减半为1rem */
-      border-bottom: 2px solid #dee2e6;
-      padding-bottom: 0.5rem;
-    }
-    
-    .download-content h2 {
-      font-size: 1.0rem; /* 原来是1.75rem，减半为0.875rem */
-      border-bottom: 1px solid #dee2e6;
-      padding-bottom: 0.3rem;
-    }
-    
-    .download-content h3 {
-      font-size: 1.0rem; /* 原来是1.5rem，减半为0.75rem */
-    }
-    
-    .download-content p {
-      margin-bottom: 1rem;
-    }
-    
-    .download-content .alert {
-      margin-top: 1rem;
-    }
-    
-    .back-link {
-      margin-bottom: 2rem;
-    }
-    
-    .loading {
-      text-align: center;
-      padding: 2rem;
-    }
-    
-    .download-btn {
-      margin: 1rem 0;
-    }
-    
-    /* 博客标题区域的字体也减半 */
-    #blog-title-text {
-      font-size: 2rem !important; /* 原来大约是2rem，减半 */
-    }
-    
-    #blog-subtitle, #blog-category, #blog-date {
-      font-size: 0.875rem !important; /* 原来大约是1rem，减半 */
-    }
-  </style>
+
+
+    <!-- Custom styles -->
+    <link href="css/resume.css" rel="stylesheet">
+    <style>
+        .note-title-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        .note-title-link:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+        .note-title-link:hover {
+            color: #3c74ee;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="index.html#page-top">
-      <span class="d-block d-lg-none">Catstars</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/avatar.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#experience">Note</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#education">Article</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#skills">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#interests">Interest</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="index.html#awards">敬请期待</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="blog-content">
-      <div class="my-auto">
-        <div class="back-link mb-4">
-          <a href="index.html#skills" class="text-primary">
-            <i class="fas fa-arrow-left"></i> 返回博客列表
-          </a>
-        </div>
-        
-        <div id="blog-header" class="mb-4">
-          <h1 id="blog-title-text"></h1>
-          <div class="subheading mb-2" id="blog-subtitle"></div>
-          <div class="subheading mb-2" id="blog-category"></div>
-          <div class="text-primary" id="blog-date"></div>
-        </div>
-        
-        <div id="blog-content-container">
-          <div class="loading" id="loading-indicator">
-            <div class="spinner-border text-primary" role="status">
-              <span class="sr-only">加载中...</span>
-            </div>
-            <p class="mt-2">正在准备下载...</p>
-          </div>
-          <div class="download-content d-none" id="blog-download-content"></div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-  
-  <script>
-    // 获取URL参数
-    function getUrlParameter(name) {
-      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-      var results = regex.exec(window.location.search);
-      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-    }
-    
-    // 渲染下载页面
-    function renderDownloadPage() {
-      const fileName = getUrlParameter('file');
-      const title = getUrlParameter('title') || '博客文章';
-      const subtitle = getUrlParameter('subtitle') || '';
-      const category = getUrlParameter('category') || '';
-      const date = getUrlParameter('date') || '';
-      
-      // 设置标题信息
-      document.getElementById('blog-title-text').textContent = title;
-      document.getElementById('blog-subtitle').textContent = subtitle;
-      document.getElementById('blog-category').textContent = category;
-      document.getElementById('blog-date').textContent = date;
-      
-      // 如果没有指定文件，显示错误信息
-      if (!fileName) {
-        document.getElementById('loading-indicator').innerHTML = 
-          '<div class="alert alert-danger" role="alert">未指定博客文件</div>';
-        return;
-      }
-      
-      // 隐藏加载指示器，显示下载内容
-      document.getElementById('loading-indicator').classList.add('d-none');
-      const contentElement = document.getElementById('blog-download-content');
-      contentElement.classList.remove('d-none');
-      
-      // 显示下载内容
-      contentElement.innerHTML = `
-        <div class="download-section">
-          <h2>下载 Markdown 文件</h2>
-          <p>您即将下载的文件信息：</p>
-          <ul>
-            <li><strong>文件名:</strong> ${fileName}</li>
-            <li><strong>标题:</strong> ${title}</li>
-            <li><strong>分类:</strong> ${category || '无分类'}</li>
-            <li><strong>发布日期:</strong> ${date || '无日期'}</li>
-          </ul>
-          
-          <div class="download-btn">
-            <a href="blogs/${fileName}" download="${fileName}" class="btn btn-primary btn-lg">
-              <i class="fas fa-download"></i> 点击下载 Markdown 文件
-            </a>
-          </div>
-          
-          <div class="alert alert-info" role="alert">
-            <h4 class="alert-heading">提示</h4>
-            <p>下载完成后，您可以使用支持 Markdown 格式的编辑器打开文件进行阅读，例如：</p>
-            <ul>
-              <li>Typora</li>
-              <li>VS Code</li>
-              <li>Atom</li>
-              <li>Mark Text</li>
-              <li>其他 Markdown 编辑器</li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+            <span class="d-block d-lg-none">Catstars</span>
+            <span class="d-none d-lg-block">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/avatar.jpg" alt="">
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#experience">Note</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#education">Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#skills">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#interests">Interest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="index.html#awards">敬请期待</a>
+                </li>
             </ul>
-          </div>
         </div>
-      `;
-    }
+    </nav>
+
+    <!-- Blog Detail Section -->
+    <div class="container-fluid p-0">
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="notes-detail">
+            <div class="my-auto">
+                <div class="back-link mb-4">
+                    <a href="index.html#skills" class="text-primary">
+                        <i class="fas fa-arrow-left"></i> 返回博客列表
+                    </a>
+                </div>
+                
+                <h2 class="mb-0">详细
+                    <span class="text-primary">博客</span>
+                </h2>
+                <div class="subheading mb-5">点击博客查看详细内容</div>
+                
+                <!-- 标签筛选 -->
+                <div class="filter-tags" id="filterTags">
+                    <span class="tag active" data-category="all">全部博客</span>
+                    <!-- 标签将由JavaScript动态生成 -->
+                </div>
+                
+                <div class="container-fluid">
+                    <div class="notes-container" id="notesContainer">
+                        <!-- 示例卡片，用于测试显示效果 -->
+                        <div class="note-card">
+                            <div class="note-header">
+                                <h3 class="note-title">示例博客标题</h3>
+                                <div class="note-subtitle">示例博客副标题</div>
+                                <div class="note-meta">2023-01-01</div>
+                                <div class="toggle-icon">▼</div>
+                            </div>
+                            <div class="note-content">
+                                <p>这是示例博客的内容部分。在GitHub Pages上应该能看到带有圆角和阴影的卡片效果。</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="langZh" class="btn btn-sm btn-outline-light">中文</button>
+        <button id="langEn" class="btn btn-sm btn-outline-light ml-2">English</button>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/resume.js"></script>
+    <!-- Combined Data -->
+    <script src="js/combinedData.js"></script>
+    <!-- 博客渲染逻辑 -->
+    <script src="js/blogtag.js"></script>
     
-    // 页面加载完成后渲染下载页面
-    document.addEventListener('DOMContentLoaded', renderDownloadPage);
-  </script>
+
+
+    <!-- Language Switcher Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLang = getCurrentLanguage();
+            const langZhBtn = document.getElementById('langZh');
+            const langEnBtn = document.getElementById('langEn');
+            
+            // 设置当前语言按钮样式
+            if (currentLang === 'zh') {
+                langZhBtn.classList.add('active');
+                langEnBtn.classList.remove('active');
+            } else {
+                langEnBtn.classList.add('active');
+                langZhBtn.classList.remove('active');
+            }
+            
+            // 添加语言切换事件
+            langZhBtn.addEventListener('click', function() {
+                setLanguage('zh');
+            });
+            
+            langEnBtn.addEventListener('click', function() {
+                setLanguage('en');
+            });
+        });
+    </script>
 </body>
 </html>
