@@ -121,7 +121,7 @@ function renderNotes(notesToRender) {
                     const pdfLink = item.file || '';
                     return `
                         <div class="outline-item">
-                            <a href="${pdfLink}" class="outline-link">
+                            <a href="${pdfLink}" class="outline-link" target="_blank">
                                 ${item.title}
                             </a>
                             <div class="outline-comment">${formattedComment}</div>
