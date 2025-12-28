@@ -2,9 +2,19 @@
 // 获取所有标签
 function getCategories() {
     const categories = [];
-    notes.forEach(note => {
-        if (!categories.includes(note.category)) {
-            categories.push(note.category);
+    const currentLang = getCurrentLanguage();
+    const notesData = getData(currentLang).notes;
+    notesData.forEach(note => {
+        if (Array.isArray(note.category)) {
+            note.category.forEach(cat => {
+                if (!categories.includes(cat)) {
+                    categories.push(cat);
+                }
+            });
+        } else {
+            if (!categories.includes(note.category)) {
+                categories.push(note.category);
+            }
         }
     });
     return categories;
@@ -12,17 +22,29 @@ function getCategories() {
 
 // 计算每个标签的笔记数量
 function getCategoryCount(category) {
+    const currentLang = getCurrentLanguage();
+    const notesData = getData(currentLang).notes;
     if (category === 'all') {
-        return notes.length;
+        return notesData.length;
     }
-    return notes.filter(note => note.category === category).length;
+    return notesData.filter(note => {
+        if (Array.isArray(note.category)) {
+            return note.category.includes(category);
+        } else {
+            return note.category === category;
+        }
+    }).length;
 }
 
 // 渲染标签
 function renderTags() {
     const tagContainer = document.getElementById('filterTags');
     const categories = getCategories();
-    let html = '<span class="tag active" data-category="all">全部笔记 <span class="tag-count">' + getCategoryCount('all') + '</span></span>';
+    // 获取当前语言
+    const currentLang = getCurrentLanguage();
+    // 根据语言版本显示不同的标题
+    const allNotesText = currentLang === 'en' ? 'All Notes' : '全部笔记';
+    let html = `<span class="tag active" data-category="all">${allNotesText} <span class="tag-count">${getCategoryCount('all')}</span></span>`;
     
     categories.forEach(category => {
         html += `<span class="tag" data-category="${category}">${category} <span class="tag-count">${getCategoryCount(category)}</span></span>`;
@@ -47,7 +69,15 @@ function renderTags() {
 
 // 筛选笔记
 function filterNotes(category) {
-    const filteredNotes = category === 'all' ? notes : notes.filter(note => note.category === category);
+    const currentLang = getCurrentLanguage();
+    const notesData = getData(currentLang).notes;
+    const filteredNotes = category === 'all' ? notesData : notesData.filter(note => {
+        if (Array.isArray(note.category)) {
+            return note.category.includes(category);
+        } else {
+            return note.category === category;
+        }
+    });
     renderNotes(filteredNotes);
 }
 
@@ -60,6 +90,16 @@ function renderNotes(notesToRender) {
         // 处理内容和评论中的换行符
         const formattedContent = note.content.replace(/\n/g, '<br>');
         
+        // 渲染分类标签
+        let categoriesHtml = '';
+        if (Array.isArray(note.category)) {
+            note.category.forEach(cat => {
+                categoriesHtml += `<span class="category-tag">${cat}</span>`;
+            });
+        } else {
+            categoriesHtml = `<span class="category-tag">${note.category}</span>`;
+        }
+        
         html += `
             <div class="note-card">
                 <div class="note-header" onclick="toggleOutline(${note.id})">
@@ -67,27 +107,27 @@ function renderNotes(notesToRender) {
                     <div class="note-subtitle">${note.subtitle}</div>
                     <div class="note-meta">
                         <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> ${note.date}</span>
-                        <span><i class="fas fa-tag mr-1"></i> ${note.category}</span>
+                        <div class="category-list"><i class="fas fa-tag mr-1"></i> ${categoriesHtml}</div>
                     </div>
-                    <div class="toggle-icon" id="toggleIcon${note.id}">▼</div>
                 </div>
                 <div class="note-content" id="noteContent${note.id}">
                     <p>${formattedContent}</p>
                 </div>
                 <div class="note-outline" id="noteOutline${note.id}">
                     ${note.outline.map(item => {
-                        // 处理大纲项评论中的换行符
-                        const formattedComment = item.comment.replace(/\n/g, '<br>');
-                        return `
-                            <div class="outline-item">
-                                <a href="note/${note.id}/${encodeURIComponent(item.title)}.pdf" class="outline-link" download>
-                                    ${item.title}
-                                    <button class="download-btn float-right">下载</button>
-                                </a>
-                                <div class="outline-comment">${formattedComment}</div>
-                            </div>
-                        `;
-                    }).join('')}
+                    // 处理大纲项评论中的换行符
+                    const formattedComment = item.comment.replace(/\n/g, '<br>');
+                    // 使用item.file属性作为PDF链接
+                    const pdfLink = item.file || '';
+                    return `
+                        <div class="outline-item">
+                            <a href="${pdfLink}" class="outline-link" download>
+                                ${item.title}
+                            </a>
+                            <div class="outline-comment">${formattedComment}</div>
+                        </div>
+                    `;
+                }).join('')}
                 </div>
             </div>
         `;
@@ -113,26 +153,12 @@ function toggleOutline(noteId) {
     }
 }
 
-// 真实下载功能
-function downloadNote(noteId, title) {
-    // 构造下载链接
-    const filename = encodeURIComponent(title);
-    const url = `note/${noteId}/${filename}.pdf`;
-    
-    // 创建一个隐藏的iframe来触发下载
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = url;
-    document.body.appendChild(iframe);
-    
-    // 一段时间后移除iframe
-    setTimeout(() => {
-        document.body.removeChild(iframe);
-    }, 1000);
-}
+
 
 // 页面加载完成后渲染笔记和标签
 document.addEventListener('DOMContentLoaded', function() {
     renderTags();
-    renderNotes(notes);
+    const currentLang = getCurrentLanguage();
+    const notesData = getData(currentLang).notes;
+    renderNotes(notesData);
 });
