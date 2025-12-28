@@ -4,9 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 body {
-  font-family: 'Open Sans', serif;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
   padding-top: 54px;
-  color: #343a40; }
+  color: #343a40;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;
+}
 
 @media (min-width: 992px) {
   body {
@@ -14,15 +18,23 @@ body {
     padding-left: 17rem; } }
 
 h1,
-h2,
+h2 {
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+  letter-spacing: -0.02em;
+}
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
-  font-weight: 700;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #343a40; }
+  color: #343a40;
+  letter-spacing: -0.01em;
+}
 
 h1 {
   font-size: 6rem;
@@ -34,7 +46,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1.35rem; }
 
 .list-social-icons a {
@@ -89,14 +101,45 @@ section.resume-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
-  section.resume-section .resume-item .resume-date {
-    min-width: none; }
+  section.resume-section .resume-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem !important;
+    transition: box-shadow 0.2s ease;
+  }
+    section.resume-section .resume-item:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    section.resume-section .resume-item .resume-date {
+      min-width: none;
+      margin-top: 0.5rem;
+    }
+    section.resume-section .resume-item .resume-content {
+      padding-right: 1rem;
+    }
+    section.resume-section .resume-item .resume-content p {
+      font-weight: 400;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    section.resume-section .resume-item .resume-content h3 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    section.resume-section .resume-item .resume-content .subheading {
+      font-weight: 500;
+      color: #6c757d;
+    }
 
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh; }
     section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+      min-width: 18rem;
+      margin-top: 0;
+    } }
 
 @media (min-width: 992px) {
   section.resume-section {
@@ -113,3 +156,554 @@ a {
   color: #654989; }
   a:hover, a:focus, a:active {
     color: #3c74ee; }
+    
+/* 在 css/resume.css 中添加以下样式 */
+.note-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.note-header {
+  padding: 20px;
+  border-bottom: 1px solid #e9ecef;
+  cursor: pointer;
+}
+
+.note-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+.note-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.note-content {
+  padding: 20px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.toggle-icon {
+  float: right;
+  font-size: 1.2rem;
+  color: #6c757d;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.note-outline {
+  display: none;
+  padding: 0 20px 20px 20px;
+}
+
+.outline-item {
+  padding: 10px 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.outline-item:last-child {
+  border-bottom: none;
+}
+
+.outline-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.outline-link:hover {
+  text-decoration: underline;
+}
+
+.outline-comment {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.back-to-notes {
+  margin-bottom: 20px;
+}
+
+/* Blog download page styles */
+.download-content {
+  line-height: 1.8;
+}
+
+.download-content h1,
+.download-content h2,
+.download-content h3,
+.download-content h4,
+.download-content h5,
+.download-content h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.download-content h1 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.download-content h2 {
+  font-size: 1.0rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.3rem;
+}
+
+.download-content h3 {
+  font-size: 1.0rem;
+}
+
+.download-content p {
+  margin-bottom: 1rem;
+}
+
+.download-content .alert {
+  margin-top: 1rem;
+}
+
+.back-link {
+  margin-bottom: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.download-btn {
+  margin: 1rem 0;
+}
+
+/* Blog title area styles */
+#blog-title-text {
+  font-size: 2rem !important;
+}
+
+#blog-subtitle, #blog-category, #blog-date {
+  font-size: 0.875rem !important;
+}
+
+.back-to-notes:hover {
+  text-decoration: underline;
+}
+
+/* Note detail page styles from note.html */
+.note-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.filter-tags {
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* 移除鼠标悬停效果 */
+
+.tag.active {
+    background-color: #3c74ee;
+    color: white;
+}
+
+.tag-count {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .note-title {
+        font-size: 1.5rem;
+    }
+    
+    .note-header {
+        padding: 1rem;
+    }
+    
+    .note-content, .note-outline {
+        padding: 1rem;
+    }
+}
+
+/* PDF viewer styles */
+.pdf-viewer-container {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    overflow: auto;
+    background: #f8f9fa;
+}
+
+.pdf-toolbar {
+    background: #fff;
+    padding: 0.75rem;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pdf-page-info {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.pdf-navigation-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.pdf-canvas {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.pdf-loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+/* Ensure download buttons are visible */
+.download-btn, .btn-download, [onclick*="download"] {
+    display: inline-block !important;
+}
+
+/* Make headings bold */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold !important;
+}
+
+.mb-0, .mb-5, .subheading {
+    font-weight: bold !important;
+}
+
+.back-to-notes i {
+  margin-right: 5px;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #3c74ee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Blog download page styles */
+.download-content {
+  line-height: 1.8;
+}
+
+.download-content h1,
+.download-content h2,
+.download-content h3,
+.download-content h4,
+.download-content h5,
+.download-content h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.download-content h1 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.download-content h2 {
+  font-size: 1.0rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.3rem;
+}
+
+.download-content h3 {
+  font-size: 1.0rem;
+}
+
+.download-content p {
+  margin-bottom: 1rem;
+}
+
+.download-content .alert {
+  margin-top: 1rem;
+}
+
+.back-link {
+  margin-bottom: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.download-btn {
+  margin: 1rem 0;
+}
+
+/* 博客标题区域的字体 */
+#blog-title-text {
+  font-size: 2rem !important;
+}
+
+#blog-subtitle, #blog-category, #blog-date {
+  font-size: 0.875rem !important;
+}
+
+/* Notes detail page styles */
+.note-outline {
+  display: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.outline-item {
+  padding: 1rem 0;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.outline-item:last-child {
+  border-bottom: none;
+}
+
+.outline-link {
+  color: #3c74ee;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.outline-link:hover {
+  text-decoration: underline;
+  color: #1045b8;
+}
+
+.outline-comment {
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  background-color: #3c74ee;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #1045b8;
+  color: white;
+}
+
+.filter-tags {
+  margin-bottom: 2rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #e9ecef;
+  color: #495057;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background-color: #3c74ee;
+  color: white;
+}
+
+.tag.active {
+  background-color: #3c74ee;
+  color: white;
+}
+
+.tag-count {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .note-title {
+    font-size: 1.5rem;
+  }
+  
+  .note-header {
+    padding: 1rem;
+  }
+  
+  .note-content, .note-outline {
+    padding: 1rem;
+  }
+}
+
+/* PDF查看器样式 */
+.pdf-viewer-container {
+  width: 100%;
+  min-height: 500px;
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+  overflow: auto;
+  background: #f8f9fa;
+}
+
+.pdf-toolbar {
+  background: #fff;
+  padding: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pdf-page-info {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.pdf-navigation-btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.pdf-canvas {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.pdf-loading {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+}
+
+/* 确保PDF浏览按钮可见 */
+.btn-download, [onclick*="download"] {
+  display: inline-block !important;
+}
+
+/* 博客分类标签样式 */
+.badge.category-tag {
+  cursor: pointer;
+}
+
+/* 移除鼠标悬停效果 */
+
+.badge.category-tag.active {
+  background-color: #3c74ee;
+  color: white;
+}
+
+/* 博客卡片中的分类标签样式 */
+.category-list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  background-color: #e9ecef;
+  color: #495057;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+/* 移除鼠标悬停效果 */
+
+/*
+ * Language Switcher
+ */
+.language-switcher {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-switcher .btn {
+  border-radius: 20px;
+  font-size: 0.875rem;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.language-switcher .btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.language-switcher .btn.active {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #343a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
