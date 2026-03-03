@@ -6,6 +6,15 @@ const data = {
         blogs: [
             {
                 id: 1,
+                title: "量子场论与表示论概要",
+                subtitle: "课程摘要",
+                category: ["表示论下的量子场论"],
+                date: "2026-3-3",
+                file: "量子场论与表示论——课程摘要.html",
+                content: "概述量子场论与表示论的交叉要点：对称性、表示、粒子表征及其在场论中的应用。包含该话题其他内容的目录。"
+            },
+            {
+                id: 2,
                 title: "杨振宁主要工作选读————序言",
                 subtitle: "",
                 category: ["杨振宁选读", "物理"],
@@ -14,7 +23,7 @@ const data = {
                 content: "悲痛于杨的离世，惊叹于杨的成就。开启一个不定期讨论班，试图从这些工作中窥探其研究特点与思想。本次选读为不定期讨论班，由于学业压力，进度较慢。"
             },
             {
-                id: 2,
+                id: 3,
                 title: "李代数讨论班讲义2————李代数的流形空间与指数映射",
                 subtitle: "",
                 category: ["数学"],
@@ -23,7 +32,7 @@ const data = {
                 content: "从李群到李代数。李群具有流形与群的双重性质，李代数也可以对应于李群流形上的李导数，以及零点切平面上的切矢。而其中的映射即为指数映射。"
             },
             {
-                id: 3,
+                id: 4,
                 title: "新知万花筒——相变理论",
                 subtitle: "相变讲义",
                 category: ["物理"],
@@ -32,7 +41,7 @@ const data = {
                 content: "相变理论由来已久，从范德瓦尔斯到李、杨，人们对相变的认识从温度曲线，对称性再到逸度零点。本文为自然哲学社的第一次新知万花筒活动，由此制作的科普视频为<a href='https://www.bilibili.com/video/BV1duh2zDEJz/' target='_blank'>《相变演义第一回——Landau创序破对称，Lee,Yang延度觅奇点》</a>"
             },
             {
-                id: 4,
+                id: 5,
                 title: "杨振宁主要工作选读A1：李杨相变理论",
                 subtitle: "",
                 category: ["杨振宁选读", "物理"],
@@ -41,7 +50,7 @@ const data = {
                 content: "杨振宁选读第一次，主要介绍李、杨相变理论的基本原理和研究方法，以及一些趣闻（或许后者更有听众？）"
             },
             {
-                id: 5,
+                id: 6,
                 title: "场论中的手征对称性破缺",
                 subtitle: "",
                 category: ["物理"],
@@ -50,14 +59,52 @@ const data = {
                 content: "探讨场论中手征对称性破缺的现象和机制，本文为2025IOP的presentation。"
             },
             {
-                id: 6,
+                id: 7,
                 title: "纤维丛在规范场的应用",
                 subtitle: "",
                 category: ["物理", "数学"],
                 date: "2025-6-23",
                 file: "The usage of Fiber bundles in gauge field thery.pdf",
                 content: "研究纤维丛在规范场论中的应用，本文为数学系25东京访学活动的选拔报告（伪装失败）"
+            },
+            {
+                id: 8,
+                title: "庞加莱群（Poincaré group）",
+                subtitle: "",
+                category: ["表示论下的量子场论","物理", "数学"],
+                date: "2026-2-24",
+                file: "庞加莱群（poincaré-group）.html",
+                content: "介绍庞加莱群的结构与在相对论中的作用，包含平移和洛伦兹变换及其代数表示。"
+            },
+            {
+                id: 9,
+                title: "维格纳（Wigner）群方法",
+                subtitle: "",
+                category: ["表示论下的量子场论","物理", "数学"],
+                date: "2026-2-26",
+                file: "维格纳（wigner）群方法.html",
+                content: "介绍维格纳群方法在粒子表征、对称性分类与表示论中的应用。"
+            },
+            {
+                id: 10,
+                title: "Coleman-Mandula 定理",
+                subtitle: "",
+                category: ["表示论下的量子场论","物理", "数学"],
+                date: "2026-3-1",
+                file: "coleman-mandula定理.html",
+                content: "讨论Coleman–Mandula定理的断言和证明要点，以及该定理对结合内禀与时空对称性的限制。"
             }
+            ,
+            {
+                id: 11,
+                title: "纤维丛与规范场",
+                subtitle: "讲义",
+                category: ["表示论下的量子场论"],
+                date: "2026-3-2",
+                file: "纤维丛与规范场.html",
+                content: "讲述纤维丛的基本概念及其在规范场论中的应用，作为与 PDF 讲义互补的课堂或阅读材料。"
+            }
+            
         ],
         // 笔记数据
         notes: [
@@ -181,7 +228,7 @@ const data = {
         // 博客数据
         blogs: [
             {
-                id: 1,
+                id: 2,
                 title: "Preface",
                 subtitle: "",
                 category: ["Overview"],
@@ -190,7 +237,7 @@ const data = {
                 content: "xxxuyyyy"
             },
             {
-                id: 2,
+                id: 3,
                 title: "Lie Algebra 2",
                 subtitle: "",
                 category: ["Mathematics"],
@@ -199,7 +246,7 @@ const data = {
                 content: "Detailed introduction to the basic concepts and applications of Lie algebra"
             },
             {
-                id: 3,
+                id: 4,
                 title: "Phase Transition",
                 subtitle: "Phase Transition Lecture Notes",
                 category: ["Physics"],
@@ -208,7 +255,7 @@ const data = {
                 content: "Explaining the basic principles and research methods of phase transition theory. The popular science video for this topic is:【<a href='https://www.bilibili.com/video/BV1duh2zDEJz/?share_source=copy_web&vd_source=32356ab7a19b3e98485e1dfa73ec2be4' target='_blank'>Phase Transition Romance - Chapter One: Landau Creates Order and Breaks Symmetry, Lee and Yang Extend the Path and Find Singular Points</a>】"
             },
             {
-                id: 4,
+                id: 5,
                 title: "A1. Lee-Yang Phase Transition Theory",
                 subtitle: "",
                 category: ["Physics"],
@@ -217,7 +264,7 @@ const data = {
                 content: "In-depth analysis of the mathematical derivation and physical significance of Lee-Yang phase transition theory"
             },
             {
-                id: 5,
+                id: 6,
                 title: "Chiral Symmetry Breaking in Field Theory",
                 subtitle: "",
                 category: ["Physics"],
@@ -226,13 +273,60 @@ const data = {
                 content: "Exploring the phenomena and mechanisms of chiral symmetry breaking in field theory"
             },
             {
-                id: 6,
+                id: 7,
                 title: "The usage of Fiber bundles in gauge field thery",
                 subtitle: "",
                 category: ["Physics"],
                 date: "2025-6-20",
                 file: "The usage of Fiber bundles in gauge field thery.pdf",
                 content: "Research on the application of fiber bundles in gauge field theory"
+            },
+            {
+                id: 8,
+                title: "Poincaré Group (poincaré-group)",
+                subtitle: "",
+                category: ["表示论下的量子场论"],
+                date: "2025-9-01",
+                file: "庞加莱群（poincaré-group）.html",
+                content: "Overview of the Poincaré group's structure and its role in relativity, including translations and Lorentz transformations."
+            },
+            {
+                id: 9,
+                title: "Wigner Group Methods",
+                subtitle: "",
+                category: ["表示论下的量子场论"],
+                date: "2025-9-15",
+                file: "维格纳（wigner）群方法.html",
+                content: "Introduction to Wigner's group-theoretical methods for classifying particle representations and symmetry applications."
+            },
+            {
+                id: 10,
+                title: "Coleman–Mandula Theorem",
+                subtitle: "",
+                category: ["表示论下的量子场论"],
+                date: "2025-10-01",
+                file: "coleman-mandula定理.html",
+                content: "Discussion of the Coleman–Mandula theorem, its statement and implications for combining internal and spacetime symmetries."
+            }
+            ,
+            {
+                id: 11,
+                title: "Fiber Bundles and Gauge Fields",
+                subtitle: "Lecture notes",
+                category: ["表示论下的量子场论"],
+                date: "2025-6-23",
+                file: "纤维丛与规范场.html",
+                content: "Lecture notes on the basics of fiber bundles and their application in gauge field theory; complements the PDF lecture."
+            }
+            ,
+            {
+                id: 1,
+                title: "Quantum Field Theory and Representation Theory — Summary",
+                subtitle: "Course summary",
+                category: ["表示论下的量子场论"],
+                date: "2025-9-20",
+                file: "量子场论与表示论——课程摘要.html",
+                content: "Summary of the intersection between quantum field theory and representation theory: symmetries, representations, particle classification and applications."
             }
         ],
         // 笔记数据
