@@ -67,34 +67,7 @@ const data = {
                 file: "The usage of Fiber bundles in gauge field thery.pdf",
                 content: "研究纤维丛在规范场论中的应用，本文为数学系25东京访学活动的选拔报告（伪装失败）"
             },
-            {
-                id: 8,
-                title: "庞加莱群（Poincaré group）",
-                subtitle: "",
-                category: ["表示论下的量子场论","物理", "数学"],
-                date: "2026-2-24",
-                file: "庞加莱群（poincaré-group）.html",
-                content: "介绍庞加莱群的结构与在相对论中的作用，包含平移和洛伦兹变换及其代数表示。"
-            },
-            {
-                id: 9,
-                title: "维格纳（Wigner）群方法",
-                subtitle: "",
-                category: ["表示论下的量子场论","物理", "数学"],
-                date: "2026-2-26",
-                file: "维格纳（wigner）群方法.html",
-                content: "介绍维格纳群方法在粒子表征、对称性分类与表示论中的应用。"
-            },
-            {
-                id: 10,
-                title: "Coleman-Mandula 定理",
-                subtitle: "",
-                category: ["表示论下的量子场论","物理", "数学"],
-                date: "2026-3-1",
-                file: "coleman-mandula定理.html",
-                content: "讨论Coleman–Mandula定理的断言和证明要点，以及该定理对结合内禀与时空对称性的限制。"
-            }
-            ,
+            
             {
                 id: 11,
                 title: "纤维丛与规范场",
@@ -104,7 +77,88 @@ const data = {
                 file: "纤维丛与规范场.html",
                 content: "讲述纤维丛的基本概念及其在规范场论中的应用，作为与 PDF 讲义互补的课堂或阅读材料。"
             }
-            
+            ,
+            {
+                id: 12,
+                title: "Coleman-Mandula 定理",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","物理","数学"],
+                date: "2025-10-01",
+                file: "Coleman-Mandula定理.pdf",
+                content: "Coleman–Mandula 定理的原文或讲稿（PDF）。"
+            },
+            {
+                id: 13,
+                title: "庞加莱群（Poincaré group）",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","物理"],
+                date: "2025-9-01",
+                file: "庞加莱群（Poincaré group）.pdf",
+                content: "关于庞加莱群的讲稿或资料（PDF）。"
+            },
+            {
+                id: 14,
+                title: "维格纳（Wigner）群方法",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","物理"],
+                date: "2025-9-15",
+                file: "维格纳（Wigner）群方法.pdf",
+                content: "维格纳群方法的讲稿或笔记（PDF）。"
+            },
+            {
+                id: 15,
+                title: "纤维丛与规范场（PDF）",
+                subtitle: "PDF",
+                category: ["物理","数学"],
+                date: "2025-6-23",
+                file: "纤维丛与规范场.pdf",
+                content: "纤维丛与规范场的 PDF 讲义。"
+            },
+            {
+                id: 16,
+                title: "共形群与生成元",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","物理"],
+                date: "2025-9-10",
+                file: "共形群与生成元.pdf",
+                content: "关于共形群与其生成元的资料（PDF）。"
+            },
+            {
+                id: 17,
+                title: "有限温场论系综方法与统计视角",
+                subtitle: "PDF",
+                category: ["物理", "有限温场论"],
+                date: "2025-7-01",
+                file: "有限温场论系综方法与统计视角.pdf",
+                content: "有限温场论与系综方法的 PDF 资料。"
+            },
+            {
+                id: 18,
+                title: "有限温度场论生成泛函",
+                subtitle: "PDF",
+                category: ["物理", "有限温场论"],
+                date: "2025-7-01",
+                file: "有限温度场论生成泛函.pdf",
+                content: "关于有限温度场论生成泛函的资料（PDF）。"
+            },
+            {
+                id: 19,
+                title: "李代数1",
+                subtitle: "PDF",
+                category: ["数学"],
+                date: "2024-01-01",
+                file: "李代数1.pdf",
+                content: "李代数入门讲义（PDF）。"
+            },
+            {
+                id: 20,
+                title: "生成泛函与Dyson-Schwinger方程",
+                subtitle: "PDF",
+                category: ["物理","数学"],
+                date: "2025-3-01",
+                file: "生成泛函与Dyson-Schwinger方程.pdf",
+                content: "生成泛函和 Dyson-Schwinger 方程的讲义（PDF）。"
+            }
         ],
         // 笔记数据
         notes: [
@@ -115,7 +169,7 @@ const data = {
                 content: "将经典场进行量子化，并利用路径积分方法进行计算，从场量子化开始，主要通过微扰的方式计算路径积分下的散射问题",
                 category: ["物理"],
                 date: "2025-7-1",
-                site: "床垫物理学",
+                site: "1",
                 outline: [
                     { title: "第一、二章 前置知识与标量场", 
                         comment: "入门级场，量子场论必吃榜。如何将狭义相对论与量子力学联系起来？最直接的想法就是正则量子化。当然，在不清楚某粒子的特征时，很多人一律按标量场处理。\n\"在开始正式学习之前，都要学会用牛刀杀一只鸡。\"",
@@ -221,6 +275,62 @@ const data = {
                         file: "note/SM/九：有限温场论.pdf" }
                 ]
             }
+        
+            ,
+            {
+                id: 6,
+                title: "抽象代数",
+                subtitle: "",
+                content: "群与环，域没学是因为在学场。（）",
+                category: ["数学"],
+                date: "2025-01-01",
+                site: "",
+                outline: [
+                    { title: "第一章：群论",comment: "", file: "note/AA/第一章，群论.pdf" },
+                    { title: "第二章：环论", comment: "", file: "note/AA/第二章，环论.pdf" }
+                ]
+            },
+            {
+                id: 7,
+                title: "共形场论 ",
+                subtitle: "",
+                content: "共形场论相关讲义（全局与二维 CFT）。",
+                category: ["物理","数学"],
+                date: "2025-01-01",
+                site: "",
+                outline: [
+                    { title: "1. 全局共形对称", comment: "", file: "note/CFT/1.全局共形对称.pdf" },
+                    { title: "2. 2d 共形对称", comment: "", file: "note/CFT/2.2d共形对称.pdf" }
+                ]
+            },
+            {
+                id: 8,
+                title: "概率与随机过程 ",
+                subtitle: "",
+                content: "概率论与随机过程的系列讲义。",
+                category: ["物理","数学"],
+                date: "2025-01-01",
+                site: "",
+                outline: [
+                    { title: "第一章：概率论基础", comment: "", file: "note/SP/第一章：概率论基础.pdf" },
+                    { title: "第二、三章：随机过程与散松分布", comment: "", file: "note/SP/第二、三章：随机过程与散松分布.pdf" },
+                    { title: "第四章：更新过程", comment: "", file: "note/SP/第四章：更新过程.pdf" },
+                    { title: "第五章：马氏链", comment: "", file: "note/SP/第五章：马氏链.pdf" },
+                    { title: "第六章：鞅理论", comment: "", file: "note/SP/第六章：更新过程.pdf" }
+                ]
+            },
+            {
+                id: 9,
+                title: "对称性拓扑场论",
+                subtitle: "",
+                content: "关于 p-形式对称的笔记。",
+                category: ["物理"],
+                date: "2025-01-01",
+                site: "",
+                outline: [
+                    { title: "p-形式对称", comment: "", file: "note/SymTFT/1.p-形式对称.pdf" }
+                ]
+            }
         ]
     },
     // 英文版本
@@ -281,34 +391,7 @@ const data = {
                 file: "The usage of Fiber bundles in gauge field thery.pdf",
                 content: "Research on the application of fiber bundles in gauge field theory"
             },
-            {
-                id: 8,
-                title: "Poincaré Group (poincaré-group)",
-                subtitle: "",
-                category: ["表示论下的量子场论"],
-                date: "2025-9-01",
-                file: "庞加莱群（poincaré-group）.html",
-                content: "Overview of the Poincaré group's structure and its role in relativity, including translations and Lorentz transformations."
-            },
-            {
-                id: 9,
-                title: "Wigner Group Methods",
-                subtitle: "",
-                category: ["表示论下的量子场论"],
-                date: "2025-9-15",
-                file: "维格纳（wigner）群方法.html",
-                content: "Introduction to Wigner's group-theoretical methods for classifying particle representations and symmetry applications."
-            },
-            {
-                id: 10,
-                title: "Coleman–Mandula Theorem",
-                subtitle: "",
-                category: ["表示论下的量子场论"],
-                date: "2025-10-01",
-                file: "coleman-mandula定理.html",
-                content: "Discussion of the Coleman–Mandula theorem, its statement and implications for combining internal and spacetime symmetries."
-            }
-            ,
+            
             {
                 id: 11,
                 title: "Fiber Bundles and Gauge Fields",
@@ -327,6 +410,88 @@ const data = {
                 date: "2025-9-20",
                 file: "量子场论与表示论——课程摘要.html",
                 content: "Summary of the intersection between quantum field theory and representation theory: symmetries, representations, particle classification and applications."
+            }
+            ,
+            {
+                id: 12,
+                title: "Coleman-Mandula Theorem",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","Physics","Mathematics"],
+                date: "2025-10-01",
+                file: "Coleman-Mandula定理.pdf",
+                content: "Coleman–Mandula theorem original or notes (PDF)."
+            },
+            {
+                id: 13,
+                title: "Poincaré Group",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","Physics"],
+                date: "2025-9-01",
+                file: "庞加莱群（Poincaré group）.pdf",
+                content: "Notes on the Poincaré group (PDF)."
+            },
+            {
+                id: 14,
+                title: "Wigner Group Methods",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","Physics"],
+                date: "2025-9-15",
+                file: "维格纳（Wigner）群方法.pdf",
+                content: "Wigner group methods notes (PDF)."
+            },
+            {
+                id: 15,
+                title: "Fiber Bundles and Gauge Fields (PDF)",
+                subtitle: "PDF",
+                category: ["Physics","Mathematics"],
+                date: "2025-6-23",
+                file: "纤维丛与规范场.pdf",
+                content: "PDF lecture on fiber bundles and gauge fields."
+            },
+            {
+                id: 16,
+                title: "Conformal Group and Generators",
+                subtitle: "PDF",
+                category: ["表示论下的量子场论","Physics"],
+                date: "2025-9-10",
+                file: "共形群与生成元.pdf",
+                content: "Materials on conformal group and generators (PDF)."
+            },
+            {
+                id: 17,
+                title: "Finite Temperature Field Theory: Ensemble Methods and Statistical Perspectives",
+                subtitle: "PDF",
+                category: ["Physics", "Finite-temperature field theory"],
+                date: "2025-7-01",
+                file: "有限温场论系综方法与统计视角.pdf",
+                content: "Finite temperature field theory and ensemble methods (PDF)."
+            },
+            {
+                id: 18,
+                title: "Generating Functionals in Finite Temperature Field Theory",
+                subtitle: "PDF",
+                category: ["Physics", "Finite-temperature field theory"],
+                date: "2025-7-01",
+                file: "有限温度场论生成泛函.pdf",
+                content: "Notes on generating functionals at finite temperature (PDF)."
+            },
+            {
+                id: 19,
+                title: "Lie Algebra 1",
+                subtitle: "PDF",
+                category: ["Mathematics"],
+                date: "2024-01-01",
+                file: "李代数1.pdf",
+                content: "Introductory lecture on Lie algebra (PDF)."
+            },
+            {
+                id: 20,
+                title: "Generating Functionals and Dyson-Schwinger Equations",
+                subtitle: "PDF",
+                category: ["Physics","Mathematics"],
+                date: "2025-3-01",
+                file: "生成泛函与Dyson-Schwinger方程.pdf",
+                content: "Notes on generating functionals and Dyson-Schwinger equations (PDF)."
             }
         ],
         // 笔记数据
