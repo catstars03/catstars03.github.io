@@ -295,7 +295,7 @@ const data = {
                 title: "共形场论 ",
                 subtitle: "",
                 content: "共形场论相关讲义（全局与二维 CFT）。",
-                category: ["物理","数学"],
+                category: ["物理"],
                 date: "2025-01-01",
                 site: "",
                 outline: [
@@ -308,7 +308,7 @@ const data = {
                 title: "概率与随机过程 ",
                 subtitle: "",
                 content: "概率论与随机过程的系列讲义。",
-                category: ["物理","数学"],
+                category: ["数学"],
                 date: "2025-01-01",
                 site: "",
                 outline: [
